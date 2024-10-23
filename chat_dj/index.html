@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head   class="header">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Chat pensif de fou</title>
+    <p class="citation"> 
+        APPUIE 24 FOIS SUR SURPRISE POUR UNE SURPRISE (attention les oreilles et les yeux ^^)
+    </p>
+</head>
+<body background="images/sigmacat.jpg" class="body">
+    <div >
+
+        <button id="a" class="suprise" onclick="show_image('images/chatheureux.jpg',300,200,'Chat')"> surprise</button> 
+        <script>
+        let bouton1 = document.getElementById('a')
+        bouton1.addEventListener('click', function() {
+        nb_click++
+        console.log(nb_click); 
+
+
+        
+        if (nb_click > 23){
+            nb_click = 0
+             console.log("musique=rageuse")
+             const newMusic = new Audio('musiques/sadcatmusic.mp3')
+             newMusic.play()
+             newMusic.loop = True
+             newMusic.volume =0.01
+        
+
+}
+        })</script>
+    </div>
+ 
+    
+</body>
+</html>
